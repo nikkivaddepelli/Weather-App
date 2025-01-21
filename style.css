@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #74CAFF;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.head-searchbar-sec {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Heading {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: rgb(46, 49, 51);
+}
+
+.inputfield {
+    width: 80%;
+    display: flex;
+    gap: 8px;
+}
+
+.inputfield input {
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    border: 1px solid rgb(171, 171, 171);
+    outline: none;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+.inputfield button {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(220, 249, 255);
+    background-color: #74CAFF;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputfield button:hover {
+    background-color: #58b9f6;
+}
+
+.details-display-section {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F7F9;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.placeName-currentWeather-date-display-section {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.searchplacename {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+.weaatherdate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #555;
+}
+
+.weathertype-imgDisplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px 20px;
+    gap: 20px;
+    width: 80%;
+}
+
+.weathertype {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weathertype img {
+    width: 70px;
+}
+
+.temperature {
+    font-size: 32px;
+    font-weight: bold;
+    color: green;
+}
+
+.feellike {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.feellike span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ebb467;
+}
+
+.Other-info-weather-related {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.right, .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.humidity, .SeaLevel, .WindGuests, .Pressure, .Feellikeleft, .WindSpeed {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .details-display-section {
+        width: 90%;
+    }
+}
